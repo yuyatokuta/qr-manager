@@ -1,54 +1,49 @@
 # qr-manager
-Manage dynamic QR codes with GitHub Pages and simple redirect pages
 
-## How it works
+Dynamic QR code manager using GitHub Pages redirects.
 
-The QR code points to a fixed GitHub Pages URL such as:
+## Fixed QR URLs
 
-`https://yuyatokuta.github.io/qr-manager/go/lab/`
+- lab  
+  `https://yuyatokuta.github.io/qr-manager/go/lab/`
 
-This page immediately redirects visitors to the current destination URL.
+- paper  
+  `https://yuyatokuta.github.io/qr-manager/go/paper/`
 
-To change the destination later, edit:
+- teaching/2026/lec0  
+  `https://yuyatokuta.github.io/qr-manager/go/teaching/2026/lec0/`
 
-`docs/go/lab/index.html`
+- misc  
+  `https://yuyatokuta.github.io/qr-manager/go/misc/`
 
-and update the URL in:
+## Current redirect targets
 
-- the `meta refresh`
-- the `window.location.replace(...)`
-- the fallback link in the body
+- lab → `https://yuyatokuta.github.io/`
+- paper → `https://yuyatokuta.github.io/Species-OT/`
+- teaching/2026/lec0 → `https://colab.research.google.com/drive/1bJr6XWOEqE2buuZOrfn2YNti3E1sgpDA?usp=sharing`
+- misc → `https://yuyatokuta.github.io/`
 
-## Setup
+## How to update a destination
 
-1. Create this repository on GitHub.
-2. Add the files in this repo.
-3. Go to **Settings > Pages**.
-4. Under **Build and deployment**, choose:
+Edit the corresponding `index.html` and update the same URL in:
+
+- `meta refresh`
+- `link rel="canonical"`
+- `window.location.replace(...)`
+- fallback `<a href="...">`
+
+## GitHub Pages setup
+
+1. Open this repository on GitHub.
+2. Go to **Settings > Pages**.
+3. Under **Build and deployment**:
    - **Source**: Deploy from a branch
    - **Branch**: `main`
    - **Folder**: `/docs`
-5. Save.
-6. Wait for GitHub Pages to publish.
-
-Your redirect URL will be:
-
-`https://yuyatokuta.github.io/qr-manager/go/lab/`
-
-## Example use
-
-Generate a QR code for:
-
-`https://yuyatokuta.github.io/qr-manager/go/lab/`
-
-Then print or share that QR code.
-
-Later, if you want to change the destination, just edit:
-
-`docs/go/lab/index.html`
+4. Save.
+5. Wait for deployment.
 
 ## Notes
 
-- The QR code itself stays the same.
-- Only the redirect target changes.
-- GitHub Pages updates may take a short time to go live.
+The QR code stays fixed.  
+Only the redirect target changes later.
