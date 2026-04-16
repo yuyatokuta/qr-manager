@@ -15,6 +15,9 @@ This repository provides fixed QR URLs whose destinations can be changed later b
 - `teaching/2026/lec0`  
   `https://yuyatokuta.github.io/qr-manager/go/teaching/2026/lec0/`
 
+- `teaching/2026/lec1`  
+  `https://yuyatokuta.github.io/qr-manager/go/teaching/2026/lec1/`
+
 - `misc`  
   `https://yuyatokuta.github.io/qr-manager/go/misc/`
 
