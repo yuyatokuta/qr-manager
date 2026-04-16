@@ -7,6 +7,7 @@ URLS = {
     "lab": "https://yuyatokuta.github.io/qr-manager/go/lab/",
     "paper": "https://yuyatokuta.github.io/qr-manager/go/paper/",
     "teaching_2026_lec0": "https://yuyatokuta.github.io/qr-manager/go/teaching/2026/lec0/",
+    "teaching_2026_lec1": "https://yuyatokuta.github.io/qr-manager/go/teaching/2026/lec1/",
     "misc": "https://yuyatokuta.github.io/qr-manager/go/misc/",
 }
 
