@@ -2,7 +2,7 @@
 
 Dynamic QR code manager using GitHub Pages redirects.
 
-This repository provides fixed QR URLs whose destinations can be changed later by editing redirect pages in `docs/`.
+This repository provides stable QR URLs whose destinations can be updated later by editing redirect pages in `docs/`.
 
 ## Fixed QR URLs
 
@@ -21,12 +21,10 @@ This repository provides fixed QR URLs whose destinations can be changed later b
 - `misc`  
   `https://yuyatokuta.github.io/qr-manager/go/misc/`
 
-## Current redirect targets
+## How it works
 
-- `lab` → `https://yuyatokuta.github.io/`
-- `paper` → `https://yuyatokuta.github.io/Species-OT/`
-- `teaching/2026/lec0` → `https://colab.research.google.com/drive/1bJr6XWOEqE2buuZOrfn2YNti3E1sgpDA?usp=sharing`
-- `misc` → temporary placeholder
+Each fixed URL points to a redirect page hosted on GitHub Pages.  
+To change a destination later, update the corresponding `index.html` in `docs/` without changing the QR code itself.
 
 ## Repository structure
 
@@ -38,6 +36,7 @@ qr-manager/
 │  ├─ lab.png
 │  ├─ paper.png
 │  ├─ teaching_2026_lec0.png
+│  ├─ teaching_2026_lec1.png
 │  └─ misc.png
 └─ docs/
    └─ go/
@@ -49,5 +48,7 @@ qr-manager/
       │  └─ index.html
       └─ teaching/
          └─ 2026/
-            └─ lec0/
+            ├─ lec0/
+            │  └─ index.html
+            └─ lec1/
                └─ index.html
